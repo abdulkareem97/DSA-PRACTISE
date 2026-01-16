@@ -1,7 +1,11 @@
-#include<iostream>
+
+// User INPUT/OUPUT
+
+#include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
     int a{6};
-    cout<<6;
+    cout << 6;
 }

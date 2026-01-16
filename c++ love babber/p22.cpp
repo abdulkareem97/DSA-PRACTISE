@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <unordered_map>
-#include<vector>
+#include <vector>
 using namespace std;
 
 // Length of a string
@@ -232,7 +232,7 @@ int main()
     cout << boolalpha;
     // cout<<isPalindrome(s);
     string str = "when all else fails reboot";
-    // cout<<reverseOrderWords(str);
+    // cout << reverseOrderWords(str);
 
     s = "aabcadbbbb";
     // cout << "Max Occurance Char " << getMaxOccuringChar(s);
@@ -240,7 +240,7 @@ int main()
 
     s = "123456";
     // s.erase(s.begin(), s.begin() + 1);
-    s.erase(3, 1);
+    // s.erase(3, 1);
     // cout << s;
     string part;
     s = "daabcbaabcbc", part = "abc";
@@ -251,6 +251,11 @@ int main()
     string s1, s2;
     s1 = "ab", s2 = "eidbaooo";
     cout << checkInclusion(s1, s2);
+
+    // vector<char> v("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+
+    // cout << " compress " << endl
+    //  << compress(v);
 
     return 0;
 }

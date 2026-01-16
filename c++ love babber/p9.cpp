@@ -8,58 +8,66 @@
 using namespace std;
 
 template <typename T, unsigned int n>
-int ls(const array<T, n>& arr, int ele) {
+int ls(const array<T, n> &arr, int ele)
+{
     // Use the array's size function to determine the size
-    for (int i = 0; i < n; i++) {
-        if (arr[i] == ele) {
+    for (int i = 0; i < n; i++)
+    {
+        if (arr[i] == ele)
+        {
             return i; // Return index if element is found
         }
     }
     return -1; // Return -1 if element is not found
 }
 
-int maxElemet(int arr[],int n){
-    int max=-2147483647 - 1;
-    for(int i=0;i<n;i++){
-        if(max<arr[i]) max = arr[i];
+int maxElemet(int arr[], int n)
+{
+    int max = -2147483647 - 1;
+    for (int i = 0; i < n; i++)
+    {
+        if (max < arr[i])
+            max = arr[i];
     }
     return max;
-
 }
 
-int sumElemet(int *arr,int n){
-    int sum=0;
-    for(int i=0;i<n;i++){
-        sum+=arr[i];
+int sumElemet(int *arr, int n)
+{
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += arr[i];
     }
     return sum;
 }
 
-
-
-
-
-
-void reverserArray(int arr[],int size){
-    for(int i=0;i<size/2;i++){
-        swap(arr[i],arr[size-i-1]);
+void reverserArray(int arr[], int size)
+{
+    for (int i = 0; i < size / 2; i++)
+    {
+        swap(arr[i], arr[size - i - 1]);
     }
 }
 
-void swapAlternate(int *arr,int size){
-    for(int i=0;i<size;i+=2){
-        if(i+1<size)
-        swap(arr[i],arr[i+1]);
+void swapAlternate(int *arr, int size)
+{
+    for (int i = 0; i < size; i += 2)
+    {
+        if (i + 1 < size)
+            swap(arr[i], arr[i + 1]);
     }
 }
 
-void printArray(int *arr,int n){
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
+void printArray(int *arr, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
     }
 }
 
-// We can initialize the array with any value by using the fill_n command 
+// We can initialize the array with any value by using the fill_n command
 
 // Example code:
 
@@ -79,9 +87,8 @@ void printArray(int *arr,int n){
 
 // }
 
-
-
-int main() {
+int main()
+{
     array<int, 5> arr = {10, 20, 30, 40, 50};
 
     int element = 30;
@@ -93,11 +100,11 @@ int main() {
     //     cout << "Element " << element << " not found!" << endl;
     // }
 
-    int arr1[5] = {1,2,3,4,5};
-    int arr2[7] = {7,5,2,56,9,1,0};
+    int arr1[5] = {1, 2, 3, 4, 5};
+    int arr2[7] = {7, 5, 2, 56, 9, 1, 0};
 
-    int arr3[4] = {1,2,3,4};
-    
+    int arr3[4] = {1, 2, 3, 4};
+
     // reverserArray(arr1,5);
 
     // for(int i=0;i<5;i++){
@@ -108,14 +115,18 @@ int main() {
 
     // cout<<maxElemet(arr2,7);
     // cout<<sumElemet(arr1,5);
-    swapAlternate(arr1,5);
+    swapAlternate(arr1, 5);
     // printArray(arr1,5);
-    swapAlternate(arr3,4);
-    printArray(arr3,4);
+    swapAlternate(arr3, 4);
+    printArray(arr3, 4);
 
+    int arr5[100];
+    fill_n(arr5, 3, 1);
 
-    
-
+    for (int i = 0; i < 6; i++)
+    {
+        cout << " " << arr5[i];
+    }
 
     return 0;
 }

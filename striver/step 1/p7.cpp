@@ -1,25 +1,31 @@
-#include<iostream>
+// While loop | Continue and break
+#include <iostream>
 using namespace std;
 
-
-int main(){
+int main()
+{
     int n{4};
     int ans = 1;
-    while(n){
+    while (n)
+    {
         ans *= n;
         n--;
     }
-    cout<<ans;
+    cout << ans;
 
     // continue and breaak statment
 
-    for(int i=0;i<10;i++){
-        if(i==5) break;
-        cout<<" "<<i;
+    for (int i = 0; i < 10; i++)
+    {
+        if (i == 5)
+            break;
+        cout << " " << i;
     }
-    cout<<endl;
-    for(int i=0;i<10;i++){
-        if(i==5) continue;
-        cout<<" "<<i;
+    cout << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        if (i == 5)
+            continue;
+        cout << " " << i;
     }
 }

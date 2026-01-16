@@ -1,0 +1,13 @@
+Step 1 - Learning the basics
+
+Lec 1 - Things to know in c++  
+            program 1 - 9
+
+Lec 2: Build-up Logical Thinking
+            program 10
+
+Lec 3: Learn STL/Java-Collections or similar thing in your language
+            program 11-12
+
+Lec 4: Know Basic Maths
+            program 13-19
